@@ -1,0 +1,30 @@
+{
+  "title": "Code walkthrough",
+  "steps": [
+    {
+      "file": "HttpTrigger/run.ps1",
+      "line": 6,
+      "description": "Add this line to authenticate with the Managed Identity (not available when running locally)"
+    },
+    {
+      "file": "HttpTrigger/run.ps1",
+      "line": 9,
+      "description": "Retrieve all the resource groups"
+    },
+    {
+      "file": "HttpTrigger/run.ps1",
+      "line": 13,
+      "description": "Get all the tags for the resource group"
+    },
+    {
+      "file": "HttpTrigger/run.ps1",
+      "line": 15,
+      "description": "If the resource group tags don't include 'exprires' then add it to our collection"
+    },
+    {
+      "file": "HttpTrigger/run.ps1",
+      "line": 24,
+      "description": "Add our collection to the body so that we can return it via the HTTP response"
+    }
+  ]
+}
